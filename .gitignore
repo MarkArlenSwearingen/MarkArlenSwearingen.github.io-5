@@ -1,6 +1,7 @@
 # Mac OS files
-.DS_Store# Logs
+.DS_Store
 
+# Logs
 logs
 *.log
 npm-debug.log*
