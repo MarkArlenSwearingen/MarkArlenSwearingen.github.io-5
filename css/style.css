@@ -1,7 +1,48 @@
-body {
-    font-family: times: 
-    backkground-color: rgb(185,130,0);}
-h1 {
-    color: rgb(255,0,255);}    
-p {font-family: arial:}
+* {
+    
+}
 
+body {
+    font-family: times;
+    background-color: rgb(185,130,0);
+}
+
+#mark {
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 5px 3px 25px #353535;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    color: rgb(8, 0, 122);
+    background-color: rgb(133, 133, 133);
+}
+
+h3, h2 {
+    background-color: rgb(133, 133, 133);
+    text-align: center;
+}
+
+ol, ul {
+    background-color: rgb(180, 180, 180);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+p {
+    font-family: arial;
+    text-align: center;
+}
+
+ul li {
+    list-style-type: disc;
+    margin-left: 50px;
+}
+
+ol li {
+    list-style-type: upper-roman;
+    margin-left: 50px;
+}
