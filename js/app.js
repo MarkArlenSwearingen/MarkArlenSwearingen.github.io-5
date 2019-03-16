@@ -20,8 +20,7 @@ getName();
 var yesIsAnswer = ['yes', 'y', 'YES', 'Y'];  //Defind global yesIsAnswer array.
 console.log(yesIsAnswer);
 var noIsAnswer = ['no','n','NO','N'];  //Defind global noIsAnswer array.
-var collegeStates
-
+var collegeStates = '';
 
 function collegeQuestion() {
   var goodAnswer = ['yes', 'no', 'y', 'n', 'YES', 'NO', 'Y', 'N'];  
@@ -47,7 +46,7 @@ function collegeQuestion() {
   teacherQuestion(goodAnswer);
 }
 
-collegeQuestion();
+//collegeQuestion();
 
 function teacherQuestion(teacherAnswer) {
   //Get the answer to the question if I was a teacher and check for yes/no or y/n.  alert based upon the response.
@@ -97,20 +96,21 @@ function flyQuestion() {
 
 function numberQuestion() {
   //Sixth question with quessing my favorite number
+  collegeStates = '';
   var favoriteNumber = '213';
   console.log('My favorite number is ' + favoriteNumber);
   var favoriteNumberGuess = prompt('Please take a guess at my favorite number ');
   console.log('Favorite Number Guess is ' + favoriteNumberGuess);
   var i = 0;
 
-  while (i < 4) {
+  while (i < 3) {
     if (favoriteNumber === favoriteNumberGuess) { 
       alert('You are correct! My favorite number is ' + favoriteNumber);
       break;
     } else {
       i++;
 
-      if (favoriteNumber < favoriteNumberGuess) {
+      if (favoriteNumber *1 < favoriteNumberGuess *1) {
         console.log(favoriteNumberGuess);
         favoriteNumberGuess = prompt('Please guess another number lower than ' + favoriteNumberGuess);
       } else {
